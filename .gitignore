@@ -1,0 +1,31 @@
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local logs / scratch
+*.log
+*.tmp
+.cache/
+node_modules/
+.env
+.env.local
+
+# Image-experiment scratchpad (used during compression tuning, not part of the app)
+img-experiments/
+*.avif.bak
+*.webp.bak
+
+# Build artifacts (none today, but reserve for later)
+dist/
+build/
+
+# Don't ship local-only feedback dumps
+dojo-feedback-*.json

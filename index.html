@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Ninja Deep Learning Dojo</title>
+  <link rel="stylesheet" href="assets/css/dojo.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/dashboard">
+      <picture>
+        <source srcset="assets/images/data-ninja-logo.webp" type="image/webp">
+        <img src="assets/images/DataNinjalogo.png" alt="Data Ninja" class="brand-mark" loading="eager" decoding="async">
+      </picture>
+      <span class="brand-text">
+        <span class="brand-title">Deep Learning Dojo</span>
+        <span class="brand-sub">Hands-on training, one rep at a time</span>
+      </span>
+    </a>
+    <nav class="topnav" id="topnav">
+      <a href="#/dashboard" data-nav="dashboard">Dojo</a>
+      <a href="#/glossary" data-nav="glossary">Glossary</a>
+      <a href="#/feedback" data-nav="feedback">Feedback</a>
+      <a href="#/about" data-nav="about">About</a>
+    </nav>
+    <button type="button" id="feedbackBtn" class="fb-trigger" title="Leave feedback">
+      <span class="fb-trigger-dot"></span>Feedback
+    </button>
+    <div class="xp-pill" id="xpPill" title="XP and current belt rank">
+      <span class="belt-dot" id="beltDot"></span>
+      <span class="belt-label" id="beltLabel">White Belt</span>
+      <span class="xp-num" id="xpNum">0 XP</span>
+    </div>
+  </header>
+
+  <main class="view" id="view" aria-live="polite"></main>
+
+  <footer class="footer">
+    <picture>
+      <source srcset="assets/images/data-ninja-logo.webp" type="image/webp">
+      <img src="assets/images/DataNinjalogo.png" alt="" loading="lazy" decoding="async">
+    </picture>
+    <span>Deep Learning Dojo &middot; Local &middot; Built for hands-on learners</span>
+    <button type="button" class="link-btn" id="resetProgressBtn" title="Wipe local progress and start over">Reset progress</button>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
