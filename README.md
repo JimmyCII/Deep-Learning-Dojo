@@ -125,18 +125,7 @@ footer. To wipe feedback: the **Clear all** button on the `#/feedback` page.
     └── MAXIMIZE.md             # the V2+ polish backlog
 ```
 
----
 
-## Before pushing to a repo
-
-1. **Rename the local folder** from `DeepLearning_Interactive_Tutor Claude` (or whatever it's called on disk) to `deep-learning-dojo` — repo name should match.
-2. Open `src/data/site-config.js` and fill in `feedbackEmail` and `repoUrl`.
-3. Delete the three 93-byte `data-ninja-*.svg` deprecation stubs in `assets/images/` and the root `AGENT_AUDIT.md` stub.
-4. Optionally swap the favicon and OG meta tags (none yet — see `docs/MAXIMIZE.md`).
-5. The legacy PNGs are committed too as `<picture>` fallback for older browsers.
-6. WebP support is ~98% globally; AVIF + responsive multi-size is in `docs/MAXIMIZE.md`.
-
----
 
 ## License
 
